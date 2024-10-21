@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 930px;
+  padding: 60px;
+  border-radius: 30px;
+  border-bottom-right-radius: 180px 180px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ask {
+  display: flex;
+  gap: 35px;
+}
+.ask .label-error {
+  color: hsl(0, 100%, 67%);
+}
+.ask label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: hsl(0, 1%, 44%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Chrome, Safari, Edge, Opera */
+}
+.ask label input {
+  width: 180px;
+  max-height: 70px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 86%);
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 8%);
+  text-transform: uppercase;
+}
+.ask label input:focus {
+  outline: none;
+  border: solid 1px hsl(259, 100%, 65%) !important;
+  caret-color: hsl(259, 100%, 65%);
+}
+.ask label .input-error {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+.ask label input::-webkit-outer-spin-button,
+.ask label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ask label .error-text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  color: hsl(0, 100%, 67%);
+}
+
+.separator {
+  position: relative;
+}
+.separator hr {
+  border: solid 1px hsl(0, 0%, 86%);
+  margin: 60px 0;
+}
+.separator .rond {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(0, -50%);
+  background-color: hsl(259, 100%, 65%);
+  padding: 30px;
+  border-radius: 999px;
+  border: none;
+}
+.separator .rond:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 125px;
+}
+.result .result-unit {
+  display: flex;
+}
+.result span {
+  font-size: 115px;
+  color: hsl(259, 100%, 65%);
+  letter-spacing: 20px;
+}/*# sourceMappingURL=main.css.map */
